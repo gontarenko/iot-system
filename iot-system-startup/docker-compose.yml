@@ -1,0 +1,20 @@
+services:
+#  publisher-app:
+#    image: anarchtsu/publisher-app
+#    restart: always
+#
+#  subscriber-app:
+#    image: anarchtsu/subscriber-app
+#    restart: always
+
+  mosquitto-broker:
+    restart: always
+    image: arm64v8/eclipse-mosquitto
+    container_name: mosquitto_broker_container
+    ports:
+      - 1883:1883
+      - 9001:9001
+    volumes:
+      - ./volumes/mosquitto/config:/mosquitto/config
+      - ./volumes/mosquitto/data:/mosquitto/data
+      - ./volumes/mosquitto/log:/mosquitto/log
