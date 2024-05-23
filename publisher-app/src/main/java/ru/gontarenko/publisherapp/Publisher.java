@@ -9,8 +9,8 @@ import org.eclipse.paho.client.mqttv3.MqttMessage;
 
 public class Publisher {
     private static final String TOPIC = "testTopic";
-//    private static final String serverURI = "tcp://mosquitto-broker:9001";
-    private static final String serverURI = "tcp://localhost:9001";
+    private static final String serverURI = "tcp://mosquitto-broker:9001";
+//    private static final String serverURI = "tcp://localhost:9001";
 
     private MqttClient mqttClient;
 

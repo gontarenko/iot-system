@@ -1,8 +1,8 @@
 services:
-#  publisher-app:
-#    image: anarchtsu/publisher-app
-#    restart: always
-#
+  publisher-app:
+    image: anarchtsu/publisher-app
+    restart: always
+
 #  subscriber-app:
 #    image: anarchtsu/subscriber-app
 #    restart: always
